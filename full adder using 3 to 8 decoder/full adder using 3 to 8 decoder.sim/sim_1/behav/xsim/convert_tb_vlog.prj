@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../full adder using 3 to 8 decoder.srcs/sources_1/new/convert.v" \
+"../../../../full adder using 3 to 8 decoder.srcs/sim_1/new/convert_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
