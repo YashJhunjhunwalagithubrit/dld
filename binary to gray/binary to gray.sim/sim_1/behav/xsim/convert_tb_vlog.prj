@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../binary to gray.srcs/sources_1/new/convert.v" \
+"../../../../binary to gray.srcs/sim_1/new/convert_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
