@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,thead,td{ 
+
+          border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px;
+
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+<body>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>St Paul's School , Rourkela</td>
+                <td> 10 <sup>th</sup></td>
+                <td class="marksObtained"> 20</td>
+            </tr>
+            <tr>
+                <td>St Paul's School, Rourkela</td>
+                <td> 12 <sup>th</sup></td>
+                <td class="marksObtained"> 80</td>
+            </tr>
+     </tbody>
+        <thead>
+             <td>School</td>
+             <td>Class</td>
+             <td class="marks">Marks</td>
+    </thead>
+    </table>
+    <script>
+ $(document).ready(function(){
+
+$(".marks").on('click',function() {
+
+var marksRow = $(this).closest("tr");
+
+ var col1 = marksRow.find(".marks").html(); 
+var col2=marksRow.find(".marksObtained").html();
+var data= col1 + "\n" + col2;
+alert(data);
+// if(col=="Marks"){
+
+//       col2.style.color="green"
+    
+
+// }
+
+});
+ });
+
+    </script>
+
+</body>
+</html>  

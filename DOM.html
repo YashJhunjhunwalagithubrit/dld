@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("h1, p").toggleClass("green");
+});
+    $("#b5").click(function(){
+		 $("img").before("<b>Adding text before the image.</b>");
+});
+$("#b6").click(function(){
+		 $("img").after("Adding text after the image.");
+});
+    $("#b3").click(function(){
+		 $(".p").prepend("<b>New Content</b>.");
+});
+$("#b4").click(function(){
+		$("ol").prepend("<li>Nuggets</li>");
+});
+$("#b1").click(function(){
+		 $("p").append(" <b>New Content</b>.");
+});
+$("#b2").click(function(){
+		$("ul").append("<li>Soup</li>");
+})
+    $("#button1").click(function(){
+		alert("Value: " + $("#txt").val());
+});
+$("#b1").click(function(){
+		 alert("Text: " + $("#par").text());
+});
+$("#b").click(function(){ 
+		 alert("HTML: " + $("#par").html());
+});
+});
+
+function appTxt() {
+var t1 = "<p>Using HTML to generate text</p>";
+var t2 = $("<p></p>").text("Using jQuery to generate text.");
+var t3 = document.createElement("p");
+t3.innerHTML = "Some Content.";
+$("body").append(t1, t2, t3);
+}
+
+</script>
+<style>.green{
+	color: green;
+	}</style>
+   
+</head>
+<body>
+<p id="par">This is line is part of a paragraph <b>and contains bold text.</b> </p>
+<button id="b1">Display Text</button>
+<button id="b">Display HTML code</button>
+<p>Username: <input type="text" id="txt" value="Ghost Rider"></p>
+<button id ="button1">Check the Value</button>
+<p>This is the first paragraph.</p>
+<p class="">This is the second paragraph.</p>
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Water</li>
+</ul>
+<button id="b1">Append content at the end of paragraph.</button >
+    <button id="b2">Append item at the end of the list.</button>
+    <p>This is the first paragraph.</p>
+<p class="p">This is the second paragraph.</p>
+<ol>
+<li>Pizza</li>
+<li>Burger</li>
+<li>Sandwich</li>
+</ol>
+<button id="b3">Prepend content at the end of paragraph.</button>
+<button id="b4">Prepend item at the starting of the list.</button>
+<br>
+<button onclick="appTxt()">Append text</button>
+<h1>This is the first heading which is soon to be turned green!</h1>
+<h2>This is the second heading which is going to remain the same!</h2>
+<p>This is the first paragraph which is soon to be turned green.</p>
+<p>This is the second paragraph which is soon to be turned green.</p>
+<button>Use the toggleClass function</button>
+</body>
+</html>

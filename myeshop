@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>MyeShop</title>
+</head>
+<bodystyle="background-color:#A2E9FF;">
+		 <h1style="text-align:center;">Welcome to MyeShop</h1>
+		 <pstyle="text-align:center;">Buy Any Product you Like at a Reasonable Price</p>
+		
+		<table>
+			<tr>
+				<td><imgsrc="myeshoplogo.png"alt="myeshop logo"width="100px"
+height="50px"></td>
+				<td><form><inputtype="text" placeholder="Search.."></form></td>
+				<td>
+					<select>
+						<option>All</option>
+						<option>CLOTHES </option>
+						<option>FOOD AND BEVERAGES </option>
+						<option>HEALTH & BEAUTY </option>
+						<option>SPORTS & LEISURE </option>
+						<option>BOOKS & ENTERTAINMENTS </option>
+					</select>
+				</td>
+				<td><button>Search</button></td>
+				 <td><span><i> [ 0 ] Items in your cart </i></span></td>
+				 <td><astyle=“background-color: red;color: white;padding: 1em 1.5em;-
+text-decoration: none;text-transform: uppercase;" href="home.html">Home</a></td>
+				<td><ahref="specialofferrs.html">Special Offers</a></td>
+				<td><ahref="contact.html">Contact</a></td>
+				<td><ahref="login.html">Login</a></td>
+			</tr>
+		</table>
+		
+</body>
+</html>

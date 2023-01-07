@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#show").click(function(){
+    $("p").show();
+  });
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+});
+function myfunction(){
+    var x=document.getElementById("myDiv")
+    if(x.style.display === "none"){
+        x.style.display="block";
+    }
+    else{
+        x.style.display="none"
+    }
+}
+function myfunction2(){
+    var x=document.getElementById("myNewDiv")
+    if(x.style.display === "block"){
+        x.style.display="none";
+    } else{
+        x.style.display="block";
+    }
+}
+
+</script>
+</head>
+<body>
+    <div id="myDiv">
+        This is a div Element
+   </div>
+    <br>
+    <button onclick="myfunction()">Hide the above Element by Clickng this</button>
+<br>
+
+<div id="myNewDiv">
+    <br>
+        This is a new div which is Being Showed
+        <br>
+    </div>
+    <br>
+    <button onclick="myfunction2()">to Show a new div click on this</button>
+<div class="hideShow">
+    <p>To hide this Paragraph click on the hide button</p> 
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+</div>
+
+
+</body>
+</html>

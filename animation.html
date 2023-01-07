@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+   <script> 
+    $(document).ready(function(){
+        $(".button").click(function(){
+            $(".div").hide()
+            var inner=$(".div").text();
+            $(".a").text("");
+            for(let c of inner){
+                $(".a").animate({
+                    height:"20px"
+                },function(){
+                    $(this).append(c)
+                })
+            }
+        })    
+    });
+</script>
+</head>
+<body>
+    <div class="div" style="background-color: plum,">Abu Samar</div>
+
+    <div class="a"></div>
+
+    <button class="button">Click</button>
+</body>
+</html>
